@@ -15,6 +15,9 @@ class TestCases(unittest.TestCase):
         self.page.set_search_phrase('Qwerty')
         assert self.page.get_nav_bar()
 
+    def test_auth(self):
+        self.page.open('http://mail.ru')
+        self.page.
 
 if __name__ == '__main__':
     unittest.main()
